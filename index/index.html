@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us"></html>
+<head> 
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0"> 
+    <title>Getting Back to My Space</title>
+    <script src="https://tailwindcss.com"></script>
+</head> 
+
+<body> 
+    <div class="chat-popup" id="mySpace">
+        <form action="/action_page.php" class="form-container">
+          <h1>Chat</h1>
+      
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+      
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+<style> 
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+.open-button {
+    background-color: blanchedalmond;
+    color:aliceblue; 
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+} 
+
+/* Popup chat - hidden by default */ 
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 3px solid hsla(54, 89%, 51%, 0.953);
+    z-index: 9; 
+}
+
+/* Styles to the form container */ 
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: brown;
+}
+
+/* Full textarea */ 
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: f23f34f29; 
+    resize: none;
+    min-height: 200px;
+}
+
+/* With textarea focus, action to take*/ 
+.form-container textarea:docus {
+    background-attachment: #fff;
+    outline: none;
+}
+
+/^ Style for the submit/send button */
+.form-container .btn {
+    background-color: blue;
+    color: white;
+    padding: auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: auto;
+    opacity: 0.5;
+}
+
+/* Background color for the cancel button */ 
+.form-container .cancel {
+    background-color: chocolate;
+}
+
+/* Hover effect for all buttons */ 
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/*Hover effecs to all buttons */ 
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+</style>
+<body>
+    <h1>My Space</h1>
+    <p>Click on the buttom at the bottom of this page to open the chat wondow</p>
+</body>
+</html>
